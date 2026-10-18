@@ -1,8 +1,16 @@
 # DeepSeek 悬浮球 (DeepSeek Orb)
 
+[![Release](https://img.shields.io/github/v/release/czx898224/deepseek-orb?style=flat-square&color=2f6fed)](https://github.com/czx898224/deepseek-orb/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?style=flat-square)](#安装)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?style=flat-square)](#安装)
+
 一颗常驻桌面的蓝色小球。点一下，DeepSeek 网页端就作为一个悬浮小窗弹出来——**给"边玩游戏 / 边看视频边随手问 AI"用**。
 
 纯 Windows 原生：PowerShell + WinForms + 分层窗口，**不注入、不挂钩任何进程**，不碰游戏反作弊。
+
+> ### ⬇ [下载 v1.0.0](https://github.com/czx898224/deepseek-orb/releases/latest)
+> 259 KB 压缩包，解压后双击 `安装.cmd` 即可，**不需要管理员权限、不需要装任何运行库**。
 
 ![在游戏里使用](docs/screenshot-game.png)
 
@@ -28,12 +36,23 @@
 
 ## 安装
 
-要求：**Windows 10 / 11** + **Microsoft Edge**（系统自带）。不需要管理员权限。
+要求：**Windows 10 / 11** + **Microsoft Edge**（系统自带）。不需要管理员权限，不装任何运行库。
 
-1. 下载本仓库（`Code → Download ZIP` 后解压，或 `git clone`）
-2. 双击 **`安装.cmd`** —— 在桌面创建「DeepSeek 悬浮球」快捷方式
-3. 双击桌面快捷方式 → 点右下角蓝球 → 在弹出的窗口里**登录 DeepSeek**（只需一次）
-4. 想开机自启：双击 **`开机自启-开启.cmd`**
+### 方式一：下载压缩包（推荐）
+
+1. 打开 [**Releases → v1.0.0**](https://github.com/czx898224/deepseek-orb/releases/latest)，下载 `deepseek-orb-v1.0.0.zip`
+2. 解压到任意目录（**别放 C 盘根目录或需要管理员权限的路径**）
+3. 双击 **`安装.cmd`** —— 在桌面创建「DeepSeek 悬浮球」快捷方式
+4. 双击桌面快捷方式 → 点蓝球 → 在弹出的窗口里**登录 DeepSeek**（只需一次）
+5. 想开机自启：双击 **`开机自启-开启.cmd`**
+
+### 方式二：从源码
+
+```powershell
+git clone https://github.com/czx898224/deepseek-orb.git
+cd deepseek-orb
+# 然后同样双击 安装.cmd
+```
 
 > 为什么不给你一个 `.vbs` 双击就跑？因为不少机器上 `.vbs` 关联被软件搞坏了，双击会弹"选择一个应用"。本项目一律走"快捷方式 → powershell.exe"，不经过 `wscript`。
 
