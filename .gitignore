@@ -1,0 +1,13 @@
+# 本机运行时生成的文件
+config.json
+orb.log
+
+# 快捷方式由 安装.cmd / 开机自启-开启.cmd 在本机重新生成
+*.lnk
+
+# 自测产物
+selftest-*.png
+_test/
+
+# Edge 独立登录 profile（不会出现在仓库里，仅为保险）
+edge-profile/
